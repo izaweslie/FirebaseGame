@@ -1,0 +1,11 @@
+.rotate {
+   -ms-transform: rotate(120deg);
+    -webkit-transform: rotate(120deg);
+     transform: rotate(120deg);
+}
+
+.normal {
+   -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+     transform: rotate(0deg);
+}
