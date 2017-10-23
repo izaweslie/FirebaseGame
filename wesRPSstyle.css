@@ -1,0 +1,7 @@
+#p1, #scoreboard, #p2, img, button {
+	float: left;
+}
+img {
+	height: 15%;
+	width: 15%;
+}

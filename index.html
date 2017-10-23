@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Rock Paper Scissors Game | October 10th, 2017</title>
 	<!-- css -->
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="wesRPSstyle.css">
 	<!-- jQuery -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -17,62 +17,39 @@
 </head>
 <body>
 <div id="container">
-	<h1>Rock Paper Scissors</h1>
+  <header>Rock Paper Scissors</header>
+
+      <div id="p1">
+        <h1>Player 1</h1>
+          <img id="RPS1" class="img-responsive thumbnail center-block normal rotate" src="https://openclipart.org/image/2400px/svg_to_png/213382/rock-paper-scissors.png" alt="Mickey Mouse Rock Paper Scissors Hands" onclick="" id="image">
+            <button id="p1ThrowR" onclick="document.getElementById('RPS1').src='Rock.png'">Rock</button>
+            <button id="p1ThrowP" onclick="document.getElementById('RPS1').src='Paper.png'">Paper</button>
+            <button id="p1ThrowS" onclick="document.getElementById('RPS1').src='Scissors.png'">Scissor</button>
+      </div>
+      
+      
+      <div id="scoreboard">
+        <h1>Scoreboard</h1>
+        <h2>Player 1 score: </h2>
+        <h2>Player 2 score: </h2>
+      </div>
+    
+    
+      <div id="p2">
+        <h1>Player 2</h1>
+          <img id="RPS2" class="img-responsive thumbnail center-block normal rotate" src="https://openclipart.org/image/2400px/svg_to_png/213382/rock-paper-scissors.png" alt="Mickey Mouse Rock Paper Scissors Hands" id="image">
+            <button id="p2ThrowR" onclick="document.getElementById('RPS2').src='Rock.png'">Rock</button>
+            <button id="p2ThrowP" onclick="document.getElementById('RPS2').src='Paper.png'">Paper</button>
+            <button id="p2ThrowS" onclick="document.getElementById('RPS2').src='Scissors.png'">Scissor</button>
+      </div>
+
+
 </div>
-<!-- Current Product -->
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <div class="row">
-              <div class="col-sm-4 col-sm-offset-2">
-                <img class="img-responsive thumbnail center-block normal rotate" src="https://openclipart.org/image/2400px/svg_to_png/213382/rock-paper-scissors.png" alt="Mickey Mouse Rock Paper Scissors Hands" onclick="Rotate()" id="image">
-              </div>
-              <div class="col-sm-6">
-                <h3 class=""><strong>User Name:</strong> <span id="player-name"></span></h3>
-                <h3 class=""><strong>Your Shot:</strong> <span id="winning-throw"></span></h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Make Your Bid -->
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h3 class="panel-title">Rock.. Paper .. Scissors .. SHOOT!</h3>
-          </div>
-          <div class="panel-body">
-            <form>
-              <div class="form-group">
-                <label for="shooter-name">Your Name</label>
-                <input class="form-control" id="shooter-name" type="text">
-              </div>
-				<div class="btn-group btn-group-justified" role="group" aria-label="...">
-				  <div class="btn-group" role="group">
-				    <button id="rock" type="button" class="btn btn-default submit-throw" type="submit">Rock</button>
-				  </div>
-				  <div class="btn-group" role="group">
-				    <button id="paper" type="button" class="btn btn-default submit-throw" type="submit">Paper</button>
-				  </div>
-				  <div class="btn-group" role="group">
-				    <button id="scissors" type="button" class="btn btn-default submit-throw" type="submit">Scissors</button>
-				  </div>
-				</div>
-            </form>
-          </div>
-        </div>
-      </div>
-
-    </div>
 
 
 
   <!-- JavaScript -->
-  <script src="javaScript.js"></script>
+  <script src="rockpaperscissors.js"></script>
 
 </body>
 
